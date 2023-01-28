@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final Ticmas</title>
+    <link rel="stylesheet" href="proyecto_final.css">
+    <link rel="shortcut icon" href="https://academy.profesional.ticmas.io/favicon.ico" type="image/x-icon">
+    <!--fuente josefine-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+<!--iconos: teléfono, carta y localización-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <div class="alineado-derecha" id="div1">
+        <button id="cambiarPersona">Cambiar persona</button>
+    </div>
+
+    <div id="div2">
+        <img class="alineado-derecha" id="foto" src="" alt="texto por si no se vé la imagen" 
+        height="100px" width="100px">
+        <h1><span id="nombre"></span>
+            <span id="apellido"></span></h1>
+    </div>
+    <br>
+
+    <!--botón experiencia laboral-->
+    <div id="div3">
+    <button type="button" id="mostrar1" onclick="mostrar(1);" class="izquierda30">Mostrar experiencia laboral</button>
+    <button type="button" id="ocultar1" onclick="ocultar(1);" class="izquierda30" style="display: none;">Ocultar experiencia laboral</button>
+    </div>
+
+    <div id="texto1" style="display:none">
+        <dl>
+            <dd>EXPERIENCIA LABORAL</dd>
+            <dd>PUESTO Y NOMBRE DE LA EMPRESA</dd>
+            <dd>[Fechas de inicio y fin]</dd>
+            <dd>Este espacio es para ofrecer un breve resumen de las responsabilidades y logros más destacados.</dd>
+        </dl>
+        <dl>
+            <dd>EXPERIENCIA LABORAL 2</dd>
+            <dd>PUESTO Y NOMBRE DE LA EMPRESA</dd>
+            <dd>[Fechas de inicio y fin]</dd>
+            <dd>Este espacio es para ofrecer un breve resumen de las responsabilidades y logros más destacados.</dd>
+        </dl>
+    </div>
+<br>
+<!--botón información académica-->
+    <div class="contenedor" id="div4">
+        <button type="button" id="mostrar2" onclick="mostrar(2);" class="derecha30">Mostrar información academica</button>
+        <button type="button" id="ocultar2" onclick="ocultar(2);" class="derecha30" style="display: none;">Ocultar información academica</button>
+    </div>
+
+    <div id="texto2" style="display:none">
+         <dl>
+                <dt>FORMACIÓN ACADÉMICA</dt>
+                <dd>NOMBRE DEL INSTITUTO</dd>
+                <dd>TÍTULO ALCANZADO</dd>
+        </dl>
+        <dl>
+            <dt>FORMACIÓN ACADÉMICA 2</dt>
+            <dd>NOMBRE DEL INSTITUTO</dd>
+            <dd>TÍTULO ALCANZADO</dd>
+    </dl>
+    </div>
+
+    <br>
+    
+    <h3 id="conocimientos">Conocimientos y Habilidades</h3>
+    <div>
+    <label for="file">Habilidad 1:</label>
+        <progress id="habilidad1" value="82" max="100"> 100% </progress>
+    <br>
+    <br>
+    <label for="file">Habilidad 2:</label>
+        <progress id="habilidad2" value="15" max="100"> 100% </progress>
+        <br>
+        <br>
+    <label for="file">Habilidad 3:</label>
+        <progress id="habilidad3" value="57" max="100"> 100% </progress>
+    </div>
+
+    <h3 id="contacto">Información de contacto</h3>
+        
+        <div class="alineado-derecha">
+            <p>Teléfono: <span id="telefono"></span>  <span class="material-symbols-outlined">
+                call
+                </span></p>
+            <p>Correo: <span id="correo"></span>  <span class="material-symbols-outlined">
+                mail
+                </span></p>
+            <p>Dirección: <span id="direccion"></span> <span id="altura"></span>, <span id="ciudad"></span>  <span class="material-symbols-outlined">
+                location_on
+                </span></p>
+        </div>
+
+    <hr>
+        <script src="proyecto_final.js"></script>
+</body>
+</html>
