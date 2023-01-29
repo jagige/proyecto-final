@@ -102,10 +102,22 @@ padding: 20px;
 #mostrar1, #mostrar2{
     background-color: #FFFA00;
     font-weight: bold;
-    
 }
+#mostrar1:hover { 
+  background-color: #fdfca2;
+}
+#mostrar2:hover { 
+  background-color: #fdfca2;
+}
+
 #ocultar1, #ocultar2{
     background-color: #dd5151;
     color: white;
     font-weight: bold;
+}
+#ocultar1:hover { 
+  background-color: #bd4444;
+}
+#ocultar2:hover { 
+  background-color: #bd4444;
 }
